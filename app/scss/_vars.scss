@@ -1,0 +1,54 @@
+$default: #8d8d8d;
+$accent: #fe3e57;
+$title: #29282d;
+$bg: #f6f6f6;
+
+%quicksand-400 {
+    font-family: 'Quicksand-Regular', sans-serif;
+    font-weight: 400;
+}
+%quicksand-500 {
+    font-family: 'Quicksand-Medium', sans-serif;
+    font-weight: 500;
+}
+%roboto-400 {
+    font-family: 'Roboto-Regular', sans-serif;
+    font-weight: 400;
+}
+%roboto-500 {
+    font-family: 'Roboto-Regular', sans-serif;
+    font-weight: 500;
+}
+%roboto-700 {
+    font-family: 'Roboto-Bold', sans-serif;
+    font-weight: 700;
+}
+
+%btn {
+    background-color: $accent;
+    text-transform: uppercase;
+    color: #fff;
+    padding: 12px 26px;
+    @extend %roboto-400;
+    box-shadow: 0px 7px 20px 0px rgba(255, 17, 48, 0.3);
+    cursor: pointer;
+}
+
+%checkbox-hidden,
+%radio-hidden{
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    position: absolute;
+}
+
+@function max($numbers...) {
+@return m#{a}x(#{$numbers});
+}
+@function min($numbers...) {
+@return m#{i}n(#{$numbers});
+}
+
+
+
